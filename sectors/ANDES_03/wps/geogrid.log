@@ -1,0 +1,550 @@
+2020-11-29 15:55:36.090 ---  *** Starting program geogrid.exe ***
+2020-11-29 15:55:36.090 --- Using the following namelist variables:
+2020-11-29 15:55:36.090 --- &SHARE
+2020-11-29 15:55:36.090 ---   WRF_CORE         = ARW
+2020-11-29 15:55:36.090 ---   MAX_DOM          = 3
+2020-11-29 15:55:36.090 ---   START_YEAR       = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---   START_MONTH      = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---   START_DAY        = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---   START_HOUR       = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---   START_MINUTE     = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---                    = 0
+2020-11-29 15:55:36.090 ---   START_SECOND     = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_YEAR         = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_MONTH        = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_DAY          = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_HOUR         = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_MINUTE       = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   END_SECOND       = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---                    = 0
+2020-11-29 15:55:36.091 ---   START_DATE       = 2020-06-20_06:00:00
+2020-11-29 15:55:36.091 ---                    = 2020-06-20_06:00:00
+2020-11-29 15:55:36.091 ---                    = 2020-06-20_06:00:00
+2020-11-29 15:55:36.091 ---   END_DATE         = 2020-06-20_06:00:00
+2020-11-29 15:55:36.091 ---                    = 2020-06-21_06:00:00
+2020-11-29 15:55:36.091 ---                    = 2020-06-21_06:00:00
+2020-11-29 15:55:36.091 ---   INTERVAL_SECONDS = 21600
+2020-11-29 15:55:36.091 ---   IO_FORM_GEOGRID  = 2
+2020-11-29 15:55:36.091 ---   OPT_OUTPUT_FROM_GEOGRID_PATH = ./
+2020-11-29 15:55:36.091 ---   SUBGRID_RATIO_X  = 1
+2020-11-29 15:55:36.091 ---                    = 1
+2020-11-29 15:55:36.091 ---                    = 1
+2020-11-29 15:55:36.091 ---   SUBGRID_RATIO_Y  = 1
+2020-11-29 15:55:36.091 ---                    = 1
+2020-11-29 15:55:36.091 ---                    = 1
+2020-11-29 15:55:36.091 ---   DEBUG_LEVEL      = 0
+2020-11-29 15:55:36.091 ---   ACTIVE_GRID      = .TRUE.
+2020-11-29 15:55:36.091 ---                    = .TRUE.
+2020-11-29 15:55:36.091 ---                    = .TRUE.
+2020-11-29 15:55:36.092 ---   NOCOLONS         = .FALSE.
+2020-11-29 15:55:36.092 --- /
+2020-11-29 15:55:36.092 --- &GEOGRID
+2020-11-29 15:55:36.092 ---   PARENT_ID         = 1
+2020-11-29 15:55:36.092 ---                     = 1
+2020-11-29 15:55:36.092 ---                     = 2
+2020-11-29 15:55:36.092 ---   PARENT_GRID_RATIO = 1
+2020-11-29 15:55:36.092 ---                     = 3
+2020-11-29 15:55:36.092 ---                     = 3
+2020-11-29 15:55:36.092 ---   I_PARENT_START    = 1
+2020-11-29 15:55:36.092 ---                     = 58
+2020-11-29 15:55:36.092 ---                     = 58
+2020-11-29 15:55:36.092 ---   J_PARENT_START    = 1
+2020-11-29 15:55:36.092 ---                     = 58
+2020-11-29 15:55:36.092 ---                     = 58
+2020-11-29 15:55:36.092 ---   S_WE              = 1
+2020-11-29 15:55:36.092 ---                     = 1
+2020-11-29 15:55:36.092 ---                     = 1
+2020-11-29 15:55:36.092 ---   E_WE              = 172
+2020-11-29 15:55:36.092 ---                     = 172
+2020-11-29 15:55:36.092 ---                     = 172
+2020-11-29 15:55:36.092 ---   S_SN              = 1
+2020-11-29 15:55:36.092 ---                     = 1
+2020-11-29 15:55:36.092 ---                     = 1
+2020-11-29 15:55:36.092 ---   E_SN              = 172
+2020-11-29 15:55:36.092 ---                     = 172
+2020-11-29 15:55:36.092 ---                     = 172
+2020-11-29 15:55:36.092 ---   GEOG_DATA_RES     = 20m+default
+2020-11-29 15:55:36.092 ---                     = 20m+default
+2020-11-29 15:55:36.092 ---                     = 20m+default
+2020-11-29 15:55:36.092 ---   DX                = 30000.000000
+2020-11-29 15:55:36.092 ---   DY                = 30000.000000
+2020-11-29 15:55:36.092 ---   MAP_PROJ          = mercator
+2020-11-29 15:55:36.092 ---   POLE_LAT          = 90.000000
+2020-11-29 15:55:36.092 ---   POLE_LON          = 0.000000
+2020-11-29 15:55:36.092 ---   REF_LAT           = -1.650000
+2020-11-29 15:55:36.092 ---   REF_LON           = -77.000000
+2020-11-29 15:55:36.092 ---   REF_X             = 100000002004087734272.000000
+2020-11-29 15:55:36.092 ---   REF_Y             = 100000002004087734272.000000
+2020-11-29 15:55:36.093 ---   TRUELAT1          = -1.650000
+2020-11-29 15:55:36.093 ---   TRUELAT2          = 30.000000
+2020-11-29 15:55:36.093 ---   STAND_LON         = -68.843002
+2020-11-29 15:55:36.093 ---   GEOG_DATA_PATH    = /home/agrineer/wrf/WPS_GEOG
+2020-11-29 15:55:36.093 ---   OPT_GEOGRID_TBL_PATH = geogrid/
+2020-11-29 15:55:36.093 --- /
+2020-11-29 15:55:36.101 --- Processing domain 1 of 3
+2020-11-29 15:55:36.101 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.101 --- INFORM: Using default interpolator sequence for HGT_M.
+2020-11-29 15:55:36.101 --- INFORM: For HGT_M, couldn't find 20m data source.
+2020-11-29 15:55:36.101 --- INFORM: Using default data source for HGT_M.
+2020-11-29 15:55:36.101 --- INFORM: For LANDUSEF, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.101 --- INFORM: Using default interpolator sequence for LANDUSEF.
+2020-11-29 15:55:36.101 --- INFORM: For LANDUSEF, couldn't find 20m data source.
+2020-11-29 15:55:36.101 --- INFORM: Using default data source for LANDUSEF.
+2020-11-29 15:55:36.101 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.101 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2020-11-29 15:55:36.101 --- INFORM: For SOILTEMP, couldn't find 20m data source.
+2020-11-29 15:55:36.101 --- INFORM: Using default data source for SOILTEMP.
+2020-11-29 15:55:36.102 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.102 --- INFORM: Using default interpolator sequence for SOILCTOP.
+2020-11-29 15:55:36.102 --- INFORM: For SOILCTOP, couldn't find 20m data source.
+2020-11-29 15:55:36.102 --- INFORM: Using default data source for SOILCTOP.
+2020-11-29 15:55:36.102 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.102 --- INFORM: Using default interpolator sequence for SOILCBOT.
+2020-11-29 15:55:36.102 --- INFORM: For SOILCBOT, couldn't find 20m data source.
+2020-11-29 15:55:36.102 --- INFORM: Using default data source for SOILCBOT.
+2020-11-29 15:55:36.102 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.102 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2020-11-29 15:55:36.103 --- INFORM: For ALBEDO12M, couldn't find 20m data source.
+2020-11-29 15:55:36.103 --- INFORM: Using default data source for ALBEDO12M.
+2020-11-29 15:55:36.103 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.103 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2020-11-29 15:55:36.103 --- INFORM: For GREENFRAC, couldn't find 20m data source.
+2020-11-29 15:55:36.103 --- INFORM: Using default data source for GREENFRAC.
+2020-11-29 15:55:36.103 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.103 --- INFORM: Using default interpolator sequence for LAI12M.
+2020-11-29 15:55:36.103 --- INFORM: For LAI12M, couldn't find 20m data source.
+2020-11-29 15:55:36.103 --- INFORM: Using default data source for LAI12M.
+2020-11-29 15:55:36.104 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.104 --- INFORM: Using default interpolator sequence for SNOALB.
+2020-11-29 15:55:36.104 --- INFORM: For SNOALB, couldn't find 20m data source.
+2020-11-29 15:55:36.104 --- INFORM: Using default data source for SNOALB.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m interpolator sequence for CON.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m data source for CON.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m interpolator sequence for VAR.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m data source for VAR.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m interpolator sequence for OA1.
+2020-11-29 15:55:36.104 --- INFORM: Using 20m data source for OA1.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m interpolator sequence for OA2.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m data source for OA2.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m interpolator sequence for OA3.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m data source for OA3.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m interpolator sequence for OA4.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m data source for OA4.
+2020-11-29 15:55:36.105 --- INFORM: Using 20m interpolator sequence for OL1.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m data source for OL1.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m interpolator sequence for OL2.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m data source for OL2.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m interpolator sequence for OL3.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m data source for OL3.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m interpolator sequence for OL4.
+2020-11-29 15:55:36.106 --- INFORM: Using 20m data source for OL4.
+2020-11-29 15:55:36.107 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.107 --- INFORM: Using default interpolator sequence for VAR_SSO.
+2020-11-29 15:55:36.107 --- INFORM: For VAR_SSO, couldn't find 20m data source.
+2020-11-29 15:55:36.107 --- INFORM: Using default data source for VAR_SSO.
+2020-11-29 15:55:36.107 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.107 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2020-11-29 15:55:36.107 --- INFORM: For LAKE_DEPTH, couldn't find 20m data source.
+2020-11-29 15:55:36.107 --- INFORM: Using default data source for LAKE_DEPTH.
+2020-11-29 15:55:36.107 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/lake_depth/index for field LAKE_DEPTH
+2020-11-29 15:55:36.107 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.107 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.107 --- INFORM: Using default interpolator sequence for URB_PARAM.
+2020-11-29 15:55:36.107 --- INFORM: For URB_PARAM, couldn't find 20m data source.
+2020-11-29 15:55:36.107 --- INFORM: Using default data source for URB_PARAM.
+2020-11-29 15:55:36.108 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/index for field URB_PARAM
+2020-11-29 15:55:36.108 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.108 --- INFORM: For FRC_URB2D, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.108 --- INFORM: Using default interpolator sequence for FRC_URB2D.
+2020-11-29 15:55:36.108 --- INFORM: For FRC_URB2D, couldn't find 20m data source.
+2020-11-29 15:55:36.108 --- INFORM: Using default data source for FRC_URB2D.
+2020-11-29 15:55:36.108 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/index for field FRC_URB2D
+2020-11-29 15:55:36.108 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.108 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.108 --- INFORM: Using default interpolator sequence for IMPERV.
+2020-11-29 15:55:36.108 --- INFORM: For IMPERV, couldn't find 20m data source.
+2020-11-29 15:55:36.108 --- INFORM: Using default data source for IMPERV.
+2020-11-29 15:55:36.108 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/index for field IMPERV
+2020-11-29 15:55:36.108 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.108 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.108 --- INFORM: Using default interpolator sequence for CANFRA.
+2020-11-29 15:55:36.108 --- INFORM: For CANFRA, couldn't find 20m data source.
+2020-11-29 15:55:36.108 --- INFORM: Using default data source for CANFRA.
+2020-11-29 15:55:36.108 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/index for field CANFRA
+2020-11-29 15:55:36.108 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.108 --- INFORM: For EROD, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.108 --- INFORM: Using default interpolator sequence for EROD.
+2020-11-29 15:55:36.108 --- INFORM: For EROD, couldn't find 20m data source.
+2020-11-29 15:55:36.108 --- INFORM: Using default data source for EROD.
+2020-11-29 15:55:36.109 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/erod/index for field EROD
+2020-11-29 15:55:36.109 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.109 --- INFORM: For CLAYFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.109 --- INFORM: Using default interpolator sequence for CLAYFRAC.
+2020-11-29 15:55:36.109 --- INFORM: For CLAYFRAC, couldn't find 20m data source.
+2020-11-29 15:55:36.109 --- INFORM: Using default data source for CLAYFRAC.
+2020-11-29 15:55:36.109 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/clayfrac_5m/index for field CLAYFRAC
+2020-11-29 15:55:36.109 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.109 --- INFORM: For SANDFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.109 --- INFORM: Using default interpolator sequence for SANDFRAC.
+2020-11-29 15:55:36.109 --- INFORM: For SANDFRAC, couldn't find 20m data source.
+2020-11-29 15:55:36.109 --- INFORM: Using default data source for SANDFRAC.
+2020-11-29 15:55:36.109 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/sandfrac_5m/index for field SANDFRAC
+2020-11-29 15:55:36.109 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.109 --- INFORM: For IRRIGATION, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:55:36.109 --- INFORM: Using default interpolator sequence for IRRIGATION.
+2020-11-29 15:55:36.109 --- INFORM: For IRRIGATION, couldn't find 20m data source.
+2020-11-29 15:55:36.109 --- INFORM: Using default data source for IRRIGATION.
+2020-11-29 15:55:36.109 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/irrigation/fao/index for field IRRIGATION
+2020-11-29 15:55:36.109 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:55:36.256 --- Processing field 1 of 23 (LANDUSEF)
+2020-11-29 15:55:43.957 --- Processing field 2 of 23 (LU_INDEX)
+2020-11-29 15:55:43.974 --- Processing field 3 of 23 (HGT_M)
+2020-11-29 15:55:50.467 --- Processing field 4 of 23 (SOILTEMP)
+2020-11-29 15:55:50.480 --- Processing field 5 of 23 (SOILCTOP)
+2020-11-29 15:56:02.005 --- Processing field 6 of 23 (SCT_DOM)
+2020-11-29 15:56:02.012 --- Processing field 7 of 23 (SOILCBOT)
+2020-11-29 15:56:13.668 --- Processing field 8 of 23 (SCB_DOM)
+2020-11-29 15:56:13.676 --- Processing field 9 of 23 (ALBEDO12M)
+2020-11-29 15:56:14.517 --- Processing field 10 of 23 (GREENFRAC)
+2020-11-29 15:56:40.102 --- Processing field 11 of 23 (LAI12M)
+2020-11-29 15:56:40.211 --- Processing field 12 of 23 (SNOALB)
+2020-11-29 15:56:40.280 --- Processing field 13 of 23 (CON)
+2020-11-29 15:56:40.316 --- Processing field 14 of 23 (VAR)
+2020-11-29 15:56:40.355 --- Processing field 15 of 23 (OA1)
+2020-11-29 15:56:40.393 --- Processing field 16 of 23 (OA2)
+2020-11-29 15:56:40.431 --- Processing field 17 of 23 (OA3)
+2020-11-29 15:56:40.468 --- Processing field 18 of 23 (OA4)
+2020-11-29 15:56:40.506 --- Processing field 19 of 23 (OL1)
+2020-11-29 15:56:40.542 --- Processing field 20 of 23 (OL2)
+2020-11-29 15:56:40.577 --- Processing field 21 of 23 (OL3)
+2020-11-29 15:56:40.613 --- Processing field 22 of 23 (OL4)
+2020-11-29 15:56:40.648 --- Processing field 23 of 23 (VAR_SSO)
+2020-11-29 15:56:40.684 --- Optional fields not processed by geogrid:
+2020-11-29 15:56:40.684 ---     LAKE_DEPTH (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/lake_depth/')
+2020-11-29 15:56:40.684 ---     URB_PARAM (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/')
+2020-11-29 15:56:40.685 ---     FRC_URB2D (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/')
+2020-11-29 15:56:40.685 ---     IMPERV (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/')
+2020-11-29 15:56:40.685 ---     CANFRA (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/')
+2020-11-29 15:56:40.685 ---     EROD (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/erod/')
+2020-11-29 15:56:40.685 ---     CLAYFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/clayfrac_5m/')
+2020-11-29 15:56:40.685 ---     SANDFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/sandfrac_5m/')
+2020-11-29 15:56:40.685 ---     IRRIGATION (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/irrigation/fao/')
+2020-11-29 15:56:40.686 --- Processing domain 2 of 3
+2020-11-29 15:56:40.686 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.686 --- INFORM: Using default interpolator sequence for HGT_M.
+2020-11-29 15:56:40.686 --- INFORM: For HGT_M, couldn't find 20m data source.
+2020-11-29 15:56:40.686 --- INFORM: Using default data source for HGT_M.
+2020-11-29 15:56:40.686 --- INFORM: For LANDUSEF, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.686 --- INFORM: Using default interpolator sequence for LANDUSEF.
+2020-11-29 15:56:40.686 --- INFORM: For LANDUSEF, couldn't find 20m data source.
+2020-11-29 15:56:40.686 --- INFORM: Using default data source for LANDUSEF.
+2020-11-29 15:56:40.687 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.687 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2020-11-29 15:56:40.687 --- INFORM: For SOILTEMP, couldn't find 20m data source.
+2020-11-29 15:56:40.687 --- INFORM: Using default data source for SOILTEMP.
+2020-11-29 15:56:40.687 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.687 --- INFORM: Using default interpolator sequence for SOILCTOP.
+2020-11-29 15:56:40.687 --- INFORM: For SOILCTOP, couldn't find 20m data source.
+2020-11-29 15:56:40.687 --- INFORM: Using default data source for SOILCTOP.
+2020-11-29 15:56:40.687 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.688 --- INFORM: Using default interpolator sequence for SOILCBOT.
+2020-11-29 15:56:40.688 --- INFORM: For SOILCBOT, couldn't find 20m data source.
+2020-11-29 15:56:40.688 --- INFORM: Using default data source for SOILCBOT.
+2020-11-29 15:56:40.688 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.688 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2020-11-29 15:56:40.688 --- INFORM: For ALBEDO12M, couldn't find 20m data source.
+2020-11-29 15:56:40.688 --- INFORM: Using default data source for ALBEDO12M.
+2020-11-29 15:56:40.688 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.689 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2020-11-29 15:56:40.689 --- INFORM: For GREENFRAC, couldn't find 20m data source.
+2020-11-29 15:56:40.689 --- INFORM: Using default data source for GREENFRAC.
+2020-11-29 15:56:40.689 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.689 --- INFORM: Using default interpolator sequence for LAI12M.
+2020-11-29 15:56:40.689 --- INFORM: For LAI12M, couldn't find 20m data source.
+2020-11-29 15:56:40.689 --- INFORM: Using default data source for LAI12M.
+2020-11-29 15:56:40.689 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.689 --- INFORM: Using default interpolator sequence for SNOALB.
+2020-11-29 15:56:40.689 --- INFORM: For SNOALB, couldn't find 20m data source.
+2020-11-29 15:56:40.689 --- INFORM: Using default data source for SNOALB.
+2020-11-29 15:56:40.690 --- INFORM: Using 20m interpolator sequence for CON.
+2020-11-29 15:56:40.690 --- INFORM: Using 20m data source for CON.
+2020-11-29 15:56:40.690 --- INFORM: Using 20m interpolator sequence for VAR.
+2020-11-29 15:56:40.690 --- INFORM: Using 20m data source for VAR.
+2020-11-29 15:56:40.690 --- INFORM: Using 20m interpolator sequence for OA1.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m data source for OA1.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m interpolator sequence for OA2.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m data source for OA2.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m interpolator sequence for OA3.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m data source for OA3.
+2020-11-29 15:56:40.691 --- INFORM: Using 20m interpolator sequence for OA4.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m data source for OA4.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m interpolator sequence for OL1.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m data source for OL1.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m interpolator sequence for OL2.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m data source for OL2.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m interpolator sequence for OL3.
+2020-11-29 15:56:40.692 --- INFORM: Using 20m data source for OL3.
+2020-11-29 15:56:40.693 --- INFORM: Using 20m interpolator sequence for OL4.
+2020-11-29 15:56:40.693 --- INFORM: Using 20m data source for OL4.
+2020-11-29 15:56:40.693 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.693 --- INFORM: Using default interpolator sequence for VAR_SSO.
+2020-11-29 15:56:40.693 --- INFORM: For VAR_SSO, couldn't find 20m data source.
+2020-11-29 15:56:40.693 --- INFORM: Using default data source for VAR_SSO.
+2020-11-29 15:56:40.694 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.694 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2020-11-29 15:56:40.694 --- INFORM: For LAKE_DEPTH, couldn't find 20m data source.
+2020-11-29 15:56:40.694 --- INFORM: Using default data source for LAKE_DEPTH.
+2020-11-29 15:56:40.694 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/lake_depth/index for field LAKE_DEPTH
+2020-11-29 15:56:40.694 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.694 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.694 --- INFORM: Using default interpolator sequence for URB_PARAM.
+2020-11-29 15:56:40.694 --- INFORM: For URB_PARAM, couldn't find 20m data source.
+2020-11-29 15:56:40.694 --- INFORM: Using default data source for URB_PARAM.
+2020-11-29 15:56:40.694 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/index for field URB_PARAM
+2020-11-29 15:56:40.694 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.694 --- INFORM: For FRC_URB2D, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.694 --- INFORM: Using default interpolator sequence for FRC_URB2D.
+2020-11-29 15:56:40.694 --- INFORM: For FRC_URB2D, couldn't find 20m data source.
+2020-11-29 15:56:40.694 --- INFORM: Using default data source for FRC_URB2D.
+2020-11-29 15:56:40.694 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/index for field FRC_URB2D
+2020-11-29 15:56:40.695 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.695 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.695 --- INFORM: Using default interpolator sequence for IMPERV.
+2020-11-29 15:56:40.695 --- INFORM: For IMPERV, couldn't find 20m data source.
+2020-11-29 15:56:40.695 --- INFORM: Using default data source for IMPERV.
+2020-11-29 15:56:40.695 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/index for field IMPERV
+2020-11-29 15:56:40.695 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.695 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.695 --- INFORM: Using default interpolator sequence for CANFRA.
+2020-11-29 15:56:40.695 --- INFORM: For CANFRA, couldn't find 20m data source.
+2020-11-29 15:56:40.695 --- INFORM: Using default data source for CANFRA.
+2020-11-29 15:56:40.695 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/index for field CANFRA
+2020-11-29 15:56:40.695 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.695 --- INFORM: For EROD, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.695 --- INFORM: Using default interpolator sequence for EROD.
+2020-11-29 15:56:40.695 --- INFORM: For EROD, couldn't find 20m data source.
+2020-11-29 15:56:40.695 --- INFORM: Using default data source for EROD.
+2020-11-29 15:56:40.695 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/erod/index for field EROD
+2020-11-29 15:56:40.695 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.695 --- INFORM: For CLAYFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.695 --- INFORM: Using default interpolator sequence for CLAYFRAC.
+2020-11-29 15:56:40.696 --- INFORM: For CLAYFRAC, couldn't find 20m data source.
+2020-11-29 15:56:40.696 --- INFORM: Using default data source for CLAYFRAC.
+2020-11-29 15:56:40.696 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/clayfrac_5m/index for field CLAYFRAC
+2020-11-29 15:56:40.696 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.696 --- INFORM: For SANDFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.696 --- INFORM: Using default interpolator sequence for SANDFRAC.
+2020-11-29 15:56:40.696 --- INFORM: For SANDFRAC, couldn't find 20m data source.
+2020-11-29 15:56:40.696 --- INFORM: Using default data source for SANDFRAC.
+2020-11-29 15:56:40.696 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/sandfrac_5m/index for field SANDFRAC
+2020-11-29 15:56:40.696 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.696 --- INFORM: For IRRIGATION, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:40.696 --- INFORM: Using default interpolator sequence for IRRIGATION.
+2020-11-29 15:56:40.696 --- INFORM: For IRRIGATION, couldn't find 20m data source.
+2020-11-29 15:56:40.696 --- INFORM: Using default data source for IRRIGATION.
+2020-11-29 15:56:40.696 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/irrigation/fao/index for field IRRIGATION
+2020-11-29 15:56:40.696 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:40.869 --- Processing field 1 of 23 (LANDUSEF)
+2020-11-29 15:56:43.399 --- Processing field 2 of 23 (LU_INDEX)
+2020-11-29 15:56:43.411 --- Processing field 3 of 23 (HGT_M)
+2020-11-29 15:56:45.965 --- Processing field 4 of 23 (SOILTEMP)
+2020-11-29 15:56:46.002 --- Processing field 5 of 23 (SOILCTOP)
+2020-11-29 15:56:48.525 --- Processing field 6 of 23 (SCT_DOM)
+2020-11-29 15:56:48.532 --- Processing field 7 of 23 (SOILCBOT)
+2020-11-29 15:56:51.058 --- Processing field 8 of 23 (SCB_DOM)
+2020-11-29 15:56:51.064 --- Processing field 9 of 23 (ALBEDO12M)
+2020-11-29 15:56:51.527 --- Processing field 10 of 23 (GREENFRAC)
+2020-11-29 15:56:56.520 --- Processing field 11 of 23 (LAI12M)
+2020-11-29 15:56:56.653 --- Processing field 12 of 23 (SNOALB)
+2020-11-29 15:56:56.703 --- Processing field 13 of 23 (CON)
+2020-11-29 15:56:56.741 --- Processing field 14 of 23 (VAR)
+2020-11-29 15:56:56.782 --- Processing field 15 of 23 (OA1)
+2020-11-29 15:56:56.822 --- Processing field 16 of 23 (OA2)
+2020-11-29 15:56:56.862 --- Processing field 17 of 23 (OA3)
+2020-11-29 15:56:56.900 --- Processing field 18 of 23 (OA4)
+2020-11-29 15:56:56.939 --- Processing field 19 of 23 (OL1)
+2020-11-29 15:56:56.976 --- Processing field 20 of 23 (OL2)
+2020-11-29 15:56:57.012 --- Processing field 21 of 23 (OL3)
+2020-11-29 15:56:57.049 --- Processing field 22 of 23 (OL4)
+2020-11-29 15:56:57.086 --- Processing field 23 of 23 (VAR_SSO)
+2020-11-29 15:56:57.120 --- Optional fields not processed by geogrid:
+2020-11-29 15:56:57.120 ---     LAKE_DEPTH (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/lake_depth/')
+2020-11-29 15:56:57.120 ---     URB_PARAM (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/')
+2020-11-29 15:56:57.121 ---     FRC_URB2D (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/')
+2020-11-29 15:56:57.121 ---     IMPERV (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/')
+2020-11-29 15:56:57.121 ---     CANFRA (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/')
+2020-11-29 15:56:57.121 ---     EROD (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/erod/')
+2020-11-29 15:56:57.121 ---     CLAYFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/clayfrac_5m/')
+2020-11-29 15:56:57.121 ---     SANDFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/sandfrac_5m/')
+2020-11-29 15:56:57.122 ---     IRRIGATION (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/irrigation/fao/')
+2020-11-29 15:56:57.122 --- Processing domain 3 of 3
+2020-11-29 15:56:57.122 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.122 --- INFORM: Using default interpolator sequence for HGT_M.
+2020-11-29 15:56:57.122 --- INFORM: For HGT_M, couldn't find 20m data source.
+2020-11-29 15:56:57.122 --- INFORM: Using default data source for HGT_M.
+2020-11-29 15:56:57.122 --- INFORM: For LANDUSEF, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.122 --- INFORM: Using default interpolator sequence for LANDUSEF.
+2020-11-29 15:56:57.122 --- INFORM: For LANDUSEF, couldn't find 20m data source.
+2020-11-29 15:56:57.122 --- INFORM: Using default data source for LANDUSEF.
+2020-11-29 15:56:57.123 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.123 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2020-11-29 15:56:57.123 --- INFORM: For SOILTEMP, couldn't find 20m data source.
+2020-11-29 15:56:57.123 --- INFORM: Using default data source for SOILTEMP.
+2020-11-29 15:56:57.123 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.123 --- INFORM: Using default interpolator sequence for SOILCTOP.
+2020-11-29 15:56:57.123 --- INFORM: For SOILCTOP, couldn't find 20m data source.
+2020-11-29 15:56:57.123 --- INFORM: Using default data source for SOILCTOP.
+2020-11-29 15:56:57.124 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.124 --- INFORM: Using default interpolator sequence for SOILCBOT.
+2020-11-29 15:56:57.124 --- INFORM: For SOILCBOT, couldn't find 20m data source.
+2020-11-29 15:56:57.124 --- INFORM: Using default data source for SOILCBOT.
+2020-11-29 15:56:57.124 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.124 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2020-11-29 15:56:57.124 --- INFORM: For ALBEDO12M, couldn't find 20m data source.
+2020-11-29 15:56:57.124 --- INFORM: Using default data source for ALBEDO12M.
+2020-11-29 15:56:57.125 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.125 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2020-11-29 15:56:57.125 --- INFORM: For GREENFRAC, couldn't find 20m data source.
+2020-11-29 15:56:57.125 --- INFORM: Using default data source for GREENFRAC.
+2020-11-29 15:56:57.125 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.125 --- INFORM: Using default interpolator sequence for LAI12M.
+2020-11-29 15:56:57.125 --- INFORM: For LAI12M, couldn't find 20m data source.
+2020-11-29 15:56:57.125 --- INFORM: Using default data source for LAI12M.
+2020-11-29 15:56:57.125 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.126 --- INFORM: Using default interpolator sequence for SNOALB.
+2020-11-29 15:56:57.126 --- INFORM: For SNOALB, couldn't find 20m data source.
+2020-11-29 15:56:57.126 --- INFORM: Using default data source for SNOALB.
+2020-11-29 15:56:57.126 --- INFORM: Using 20m interpolator sequence for CON.
+2020-11-29 15:56:57.126 --- INFORM: Using 20m data source for CON.
+2020-11-29 15:56:57.126 --- INFORM: Using 20m interpolator sequence for VAR.
+2020-11-29 15:56:57.126 --- INFORM: Using 20m data source for VAR.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m interpolator sequence for OA1.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m data source for OA1.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m interpolator sequence for OA2.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m data source for OA2.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m interpolator sequence for OA3.
+2020-11-29 15:56:57.127 --- INFORM: Using 20m data source for OA3.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m interpolator sequence for OA4.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m data source for OA4.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m interpolator sequence for OL1.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m data source for OL1.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m interpolator sequence for OL2.
+2020-11-29 15:56:57.128 --- INFORM: Using 20m data source for OL2.
+2020-11-29 15:56:57.129 --- INFORM: Using 20m interpolator sequence for OL3.
+2020-11-29 15:56:57.129 --- INFORM: Using 20m data source for OL3.
+2020-11-29 15:56:57.129 --- INFORM: Using 20m interpolator sequence for OL4.
+2020-11-29 15:56:57.129 --- INFORM: Using 20m data source for OL4.
+2020-11-29 15:56:57.129 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.129 --- INFORM: Using default interpolator sequence for VAR_SSO.
+2020-11-29 15:56:57.129 --- INFORM: For VAR_SSO, couldn't find 20m data source.
+2020-11-29 15:56:57.129 --- INFORM: Using default data source for VAR_SSO.
+2020-11-29 15:56:57.130 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.130 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2020-11-29 15:56:57.130 --- INFORM: For LAKE_DEPTH, couldn't find 20m data source.
+2020-11-29 15:56:57.130 --- INFORM: Using default data source for LAKE_DEPTH.
+2020-11-29 15:56:57.130 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/lake_depth/index for field LAKE_DEPTH
+2020-11-29 15:56:57.130 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.130 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.130 --- INFORM: Using default interpolator sequence for URB_PARAM.
+2020-11-29 15:56:57.130 --- INFORM: For URB_PARAM, couldn't find 20m data source.
+2020-11-29 15:56:57.130 --- INFORM: Using default data source for URB_PARAM.
+2020-11-29 15:56:57.130 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/index for field URB_PARAM
+2020-11-29 15:56:57.130 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.130 --- INFORM: For FRC_URB2D, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.130 --- INFORM: Using default interpolator sequence for FRC_URB2D.
+2020-11-29 15:56:57.130 --- INFORM: For FRC_URB2D, couldn't find 20m data source.
+2020-11-29 15:56:57.130 --- INFORM: Using default data source for FRC_URB2D.
+2020-11-29 15:56:57.131 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/index for field FRC_URB2D
+2020-11-29 15:56:57.131 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.131 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.131 --- INFORM: Using default interpolator sequence for IMPERV.
+2020-11-29 15:56:57.131 --- INFORM: For IMPERV, couldn't find 20m data source.
+2020-11-29 15:56:57.131 --- INFORM: Using default data source for IMPERV.
+2020-11-29 15:56:57.131 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/index for field IMPERV
+2020-11-29 15:56:57.131 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.131 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.131 --- INFORM: Using default interpolator sequence for CANFRA.
+2020-11-29 15:56:57.131 --- INFORM: For CANFRA, couldn't find 20m data source.
+2020-11-29 15:56:57.131 --- INFORM: Using default data source for CANFRA.
+2020-11-29 15:56:57.131 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/index for field CANFRA
+2020-11-29 15:56:57.131 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.131 --- INFORM: For EROD, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.131 --- INFORM: Using default interpolator sequence for EROD.
+2020-11-29 15:56:57.131 --- INFORM: For EROD, couldn't find 20m data source.
+2020-11-29 15:56:57.131 --- INFORM: Using default data source for EROD.
+2020-11-29 15:56:57.132 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/erod/index for field EROD
+2020-11-29 15:56:57.132 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.132 --- INFORM: For CLAYFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.132 --- INFORM: Using default interpolator sequence for CLAYFRAC.
+2020-11-29 15:56:57.132 --- INFORM: For CLAYFRAC, couldn't find 20m data source.
+2020-11-29 15:56:57.132 --- INFORM: Using default data source for CLAYFRAC.
+2020-11-29 15:56:57.132 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/clayfrac_5m/index for field CLAYFRAC
+2020-11-29 15:56:57.132 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.132 --- INFORM: For SANDFRAC, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.132 --- INFORM: Using default interpolator sequence for SANDFRAC.
+2020-11-29 15:56:57.132 --- INFORM: For SANDFRAC, couldn't find 20m data source.
+2020-11-29 15:56:57.132 --- INFORM: Using default data source for SANDFRAC.
+2020-11-29 15:56:57.132 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/sandfrac_5m/index for field SANDFRAC
+2020-11-29 15:56:57.132 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.132 --- INFORM: For IRRIGATION, couldn't find interpolator sequence for resolution 20m.
+2020-11-29 15:56:57.132 --- INFORM: Using default interpolator sequence for IRRIGATION.
+2020-11-29 15:56:57.132 --- INFORM: For IRRIGATION, couldn't find 20m data source.
+2020-11-29 15:56:57.132 --- INFORM: Using default data source for IRRIGATION.
+2020-11-29 15:56:57.132 --- INFORM: Could not read 'index' file /home/agrineer/wrf/WPS_GEOG/irrigation/fao/index for field IRRIGATION
+2020-11-29 15:56:57.132 --- INFORM: This field is optional and will not be processed.
+2020-11-29 15:56:57.308 --- Processing field 1 of 23 (LANDUSEF)
+2020-11-29 15:56:58.308 --- Processing field 2 of 23 (LU_INDEX)
+2020-11-29 15:56:58.319 --- Processing field 3 of 23 (HGT_M)
+2020-11-29 15:56:58.391 --- Processing field 4 of 23 (SOILTEMP)
+2020-11-29 15:56:58.437 --- Processing field 5 of 23 (SOILCTOP)
+2020-11-29 15:56:59.426 --- Processing field 6 of 23 (SCT_DOM)
+2020-11-29 15:56:59.432 --- Processing field 7 of 23 (SOILCBOT)
+2020-11-29 15:57:00.424 --- Processing field 8 of 23 (SCB_DOM)
+2020-11-29 15:57:00.430 --- Processing field 9 of 23 (ALBEDO12M)
+2020-11-29 15:57:00.940 --- Processing field 10 of 23 (GREENFRAC)
+2020-11-29 15:57:01.553 --- Processing field 11 of 23 (LAI12M)
+2020-11-29 15:57:01.735 --- Processing field 12 of 23 (SNOALB)
+2020-11-29 15:57:01.789 --- Processing field 13 of 23 (CON)
+2020-11-29 15:57:01.828 --- Processing field 14 of 23 (VAR)
+2020-11-29 15:57:01.873 --- Processing field 15 of 23 (OA1)
+2020-11-29 15:57:01.916 --- Processing field 16 of 23 (OA2)
+2020-11-29 15:57:01.958 --- Processing field 17 of 23 (OA3)
+2020-11-29 15:57:02.001 --- Processing field 18 of 23 (OA4)
+2020-11-29 15:57:02.042 --- Processing field 19 of 23 (OL1)
+2020-11-29 15:57:02.083 --- Processing field 20 of 23 (OL2)
+2020-11-29 15:57:02.123 --- Processing field 21 of 23 (OL3)
+2020-11-29 15:57:02.164 --- Processing field 22 of 23 (OL4)
+2020-11-29 15:57:02.204 --- Processing field 23 of 23 (VAR_SSO)
+2020-11-29 15:57:02.236 --- Optional fields not processed by geogrid:
+2020-11-29 15:57:02.236 ---     LAKE_DEPTH (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/lake_depth/')
+2020-11-29 15:57:02.236 ---     URB_PARAM (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/NUDAPT44_1km/')
+2020-11-29 15:57:02.236 ---     FRC_URB2D (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/urbfrac_nlcd2011/')
+2020-11-29 15:57:02.236 ---     IMPERV (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_imp_ll_9s/')
+2020-11-29 15:57:02.236 ---     CANFRA (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/nlcd2011_can_ll_9s/')
+2020-11-29 15:57:02.237 ---     EROD (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/erod/')
+2020-11-29 15:57:02.237 ---     CLAYFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/clayfrac_5m/')
+2020-11-29 15:57:02.237 ---     SANDFRAC (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/sandfrac_5m/')
+2020-11-29 15:57:02.237 ---     IRRIGATION (priority=1, resolution='default', path='/home/agrineer/wrf/WPS_GEOG/irrigation/fao/')
+2020-11-29 15:57:02.237 ---  *** Successful completion of program geogrid.exe ***

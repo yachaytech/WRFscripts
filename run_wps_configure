@@ -1,0 +1,25 @@
+#!/bin/sh
+echo "Starting WPS configure and compile"
+
+export FC=gfortran
+export NETCDF=/home/agrineer/wrf
+export JASPERINC=/home/agrineer/wrf/include
+export JASPERLIB=/home/agrineer/wrf/lib
+
+./clean -a
+
+./configure << EOF
+1                 
+EOF
+
+# we should not have to do this!
+sed -i 's/-L$(NETCDF)\/lib -lnetcdff -lnetcdf/-L$(NETCDF)\/lib -lnetcdff -lnetcdf -lhdf5hl_fortran -lhdf5_hl -lhdf5_fortran -lhdf5 -lm -lz/' ./configure.wps
+
+# uncomment below to use Jasper (using GRIB2 forces Jasper)
+sed -i 's/glade\/u\/home\/wrfhelp\/UNGRIB_LIBRARIES/home\/agrineer\/wrf/' ./configure.wps
+
+sed -i 's/glade\/u\/home\/wrfhelp\/UNGRIB_LIBRARIES/home\/agrineer\/wrf/' ./configure.wps
+
+./compile 2>&1 | tee build.txt
+
+echo "End of WPS configure and compile"
