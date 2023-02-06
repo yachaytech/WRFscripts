@@ -1,0 +1,65 @@
+#!/bin/sh
+
+# bourne shell script to run wrf cron jobs
+HOME=/students/agrineer
+WRFHOME=$HOME/wrf
+SCRIPTS=$WRFHOME/scripts
+GFSHOME=$WRFHOME/gfs_0.25
+LOGDIR=$WRFHOME/log
+
+export LD_LIBRARY_PATH=$WRFHOME/lib:/usr/local/lib:/usr/lib:/lib
+#export NCARG_ROOT=/usr/local/ncarg
+export MP_STACK_SIZE=64000000 
+
+#TODO put arg prefix eg -s SECTOR -r rundate
+#TODO make case statement
+if [ $# -eq 0 ];
+then
+    echo "please specify a sector...exiting."
+    exit 1
+fi
+
+# run with yesterday's date 
+if [ $# -eq 1 ];
+then
+    DATE=`date +"%Y%m%d" --date='1 day ago'`
+    echo "running sector:" $1 "with yesterday's date:" $DATE
+fi
+
+# run with given date
+if [ $# -eq 2 ];
+then
+    DATE=$2
+    echo "running sector:" $1 "with date:" $DATE
+fi
+
+if [ $# -gt 2 ];
+then
+    echo "too many arguments....exiting"
+    exit 1
+fi
+
+# run the WRF model
+#$SCRIPTS/run_wrfgfs.py -s $1 -b 06 -d $GFSHOME -r $DATE > $LOGDIR/$1.log 2>&1
+
+# this version separates stdin from the terminal so that when
+# ^c'ing out of 'tail -f SECTOR.log' the 'run_wrfgfs.py' program is not stopped
+# times can only be 00,06,12,18
+$SCRIPTS/run_wrfgfs.py -s $1 -b 06 -d $GFSHOME -r $DATE < /dev/null > $LOGDIR/$1.log 2>&1
+
+# below was used for Iceland
+#$SCRIPTS/run_wrfgfs.py -s $1 -b 00 -d $GFSHOME -r $DATE < /dev/null > $LOGDIR/$1.log 2>&1
+
+# check exit status
+status=$?
+if [ $status -gt 0 ];
+then
+    # preserve error log
+    cp $LOGDIR/$1.log $LOGDIR/$1_ERROR_$DATE.log
+
+    # remove lock file so subsequent runs don't get locked out
+    rm -f $LOGDIR/running_$1.lock
+    
+    echo "ERROR found, exiting..."
+
+fi

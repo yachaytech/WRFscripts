@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "Starting WRF configure and compile"
+
+export HDF5=/home/agrineer/wrf
+export NETCDF=/home/agrineer/wrf
+export NETCDF_classic=1
+export JASPERINC=/home/agrineer/wrf/include
+export JASPERLIB=/home/agrineer/wrf/lib
+
+sed -i 's/$I_really_want_to_output_grib2_from_WRF = "FALSE"/$I_really_want_to_output_grib2_from_WRF = "TRUE"/' ./arch\/Config.pl
+
+./clean -a
+./configure << EOF
+34
+1
+EOF
+
+./compile em_real 2>&1 | tee build.txt
+
+echo "End of WRF configure and compile"

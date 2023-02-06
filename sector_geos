@@ -1,0 +1,10 @@
+#!/bin/sh
+HOME=/home/agrineer/wrf/sectors
+export LD_LIBRARY_PATH=/home/agrineer/wrf/lib:$LD_LIBRARY_PATH
+
+for sector in `ls $HOME`
+do
+    echo "working on sector $sector"
+    cd $HOME/$sector/wps
+    ./geogrid.exe
+done
