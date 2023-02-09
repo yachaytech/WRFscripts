@@ -93,7 +93,7 @@ echo "Zipping to file: $ZIPFILE"
 res=`/usr/bin/curl -s -F WRFfile="@$ZIPFILE" "http://www.yachay.openfabtech.org/upload/transfer.php?sector=$SECTOR&date=$RUNDATE&time=$TIME&email=$EMAIL&name=$NAME&inst=$INST"`
 
 # remove zip file whether upload was successful or not
-#rm -f $ZIPFILE
+rm -f $ZIPFILE
 
 # gotta make it a string
 res="$res"   
